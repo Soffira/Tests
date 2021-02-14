@@ -1,8 +1,8 @@
 import re
 def check_correct(exampleA):
-    if exampleA.startswith(('+', '*', '/', '(', ')')):
+    if exampleA.startswith(('+', '*', '/', '(', ')', '.')):
         return False
-    elif not re.match(r'[\d.]+|[\+\-\/\*\(\)]', exampleA, re.IGNORECASE):
+    elif not re.match(r'[\d.]+|[\+\-\/\*]', exampleA, re.IGNORECASE):
         return False
     else:
         return True
